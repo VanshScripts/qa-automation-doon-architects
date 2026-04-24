@@ -26,7 +26,7 @@ class ContactPage:
 
     def select_project_type(self):
         dropdown = Select(self.driver.find_element(*self.project_type))
-        dropdown.select_by_value("residential")  # matches your code
+        dropdown.select_by_value("residential") 
 
     def submit_form(self):
         button = self.driver.find_element(*self.submit)
