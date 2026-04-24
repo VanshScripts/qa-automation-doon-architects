@@ -13,7 +13,6 @@ class ContactPage:
     phone = (By.NAME, "phone")
     message = (By.NAME, "message")
 
-    # Dropdown (IMPORTANT: it's SELECT, not div)
     project_type = (By.NAME, "projectType")
 
     # Submit button
@@ -34,8 +33,6 @@ class ContactPage:
 
         self.driver.execute_script("arguments[0].scrollIntoView(true);", button)
 
-        # wait a bit for animation layer to settle
-        time.sleep(1.5)
 
-        # FORCE CLICK (bypass overlay)
+        time.sleep(1.5)
         self.driver.execute_script("arguments[0].click();", button)

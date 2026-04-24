@@ -11,13 +11,13 @@ def test_contact_form():
     contact.fill_form(
         "Vansh",
         "test@gmail.com",
-        "9876543210",   # ✅ REQUIRED
+        "9876543210",  
         "Testing message"
     )
 
     contact.select_project_type()
 
-    time.sleep(2)  # allow validation
+    time.sleep(2) 
 
     contact.submit_form()
 

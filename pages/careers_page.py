@@ -15,8 +15,7 @@ class CareersPage:
         self.wait.until(
             EC.presence_of_element_located((By.TAG_NAME, "body"))
         )
-
-    # Step 1: Click job card
+        
     def open_job_role(self):
         job = self.wait.until(
             EC.presence_of_element_located(
